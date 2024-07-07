@@ -21,7 +21,7 @@ const TabPanel = () => {
         <button className="mt-8 bg-purple-600 hover:bg-purple-700 text-white py-2 px-4 sm:px-6 rounded-full text-sm sm:text-lg md:text-xl">
           Get Started →
         </button>
-        <div className="mt-8 flex space-x-2 sm:space-x-4">
+        <div className="mt-8 flex space-x-2 sm:space-x-4 fixed bottom-4">
           <button className="bg-gray-700 hover:bg-gray-800 text-white py-2 px-4 sm:px-6 rounded-full text-sm sm:text-lg md:text-xl">
             Essentials
           </button>
