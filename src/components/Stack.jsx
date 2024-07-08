@@ -5,8 +5,10 @@ import Task from './Task';
 const Stack = ({down,margin,width}) => {
   
   return (
-    <div className={`grid grid-cols-1  pl-16 ${margin} ${width} ${down} `}>
-      <div className="bg-gray-900 text-white pl-16 py-5 rounded-lg shadow-lg w-[50%] ">
+    <div
+      className={`grid grid-cols-1  lg:pl-16 ${margin} ${width} ${down} w-full p-3`}
+    >
+      <div className="bg-gray-900 text-white  py-5 rounded-lg shadow-lg w-full lg:w-[50%] ">
         <div className="flex items-center">
           <div className="w-16 h-16 bg-gray-800 flex items-center justify-center rounded-full">
             <img
@@ -34,11 +36,10 @@ const Stack = ({down,margin,width}) => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-1 w-[50%] h-96 gap-1 px-8 overflow-auto bg-black p-3">
-   
-        {[1,2,3,4,5].map((i) => {
-  return <Task key={i} />;
-})}
+      <div className="grid grid-cols-1 w-full lg:w-[50%] h-96 gap-1 px-8 overflow-auto bg-black p-3">
+        {[1, 2, 3, 4, 5].map((i) => {
+          return <Task key={i} />;
+        })}
       </div>
     </div>
   );

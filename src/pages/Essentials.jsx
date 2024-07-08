@@ -6,10 +6,11 @@ import TabPanel2 from "../components/TabPanel2";
 const Essentials = () => {
   return (
     <>
-      <TabPanel>
-      </TabPanel>
-      <Tabpanel1 />
-      <TabPanel2/>
+      <div className="">
+        <TabPanel></TabPanel>
+        <Tabpanel1 />
+        <TabPanel2 />
+      </div>
     </>
   );
 };

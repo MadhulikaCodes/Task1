@@ -7,11 +7,11 @@ const Header = () => {
     location.pathname === "/" ? 0 : location.pathname === "/advanced" ? 1 : 0;
 
   return (
-    <header className="bg-black text-white">
+    <header className="bg-black text-white w-full">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="flex items-center">
+        <div className="flex items-center mx-5">
           <h1 className="text-xl font-bold mr-8">intract.</h1>
-          <nav className="flex space-x-4">
+          <nav className="hidden md:flex space-x-4">
             <Link to="/" className="hover:text-gray-400">
               Compass
             </Link>
@@ -40,7 +40,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search for ecosystems, trending quests etc.,"
-              className="bg-gray-800 text-gray-300 pl-10 pr-4 py-2 rounded-full focus:outline-none"
+              className="bg-gray-800 text-gray-300 pl-10 pr-4 py-2 rounded-full focus:outline-none w-full max-w-xs"
             />
             <svg
               className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400"
@@ -76,6 +76,23 @@ const Header = () => {
           </button>
         </div>
       </div>
+      <nav className="md:hidden flex justify-around p-4 bg-black">
+        <Link to="/" className="hover:text-gray-400">
+          Compass
+        </Link>
+        <Link to="/explore" className="hover:text-gray-400">
+          Explore
+        </Link>
+        <Link to="/academy" className="hover:text-gray-400">
+          Academy
+        </Link>
+        <Link to="/nfts" className="hover:text-gray-400">
+          NFTs
+        </Link>
+        <Link to="/projects" className="hover:text-gray-400">
+          For Projects
+        </Link>
+      </nav>
     </header>
   );
 };

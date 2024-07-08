@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-black text-white py-8 pt-20">
-      <div className="container mx-auto px-4">
+      <div className="container  mx-0 px-4 bg-black">
         <div className="flex flex-col md:flex-row justify-between">
           <div className="mb-6 md:mb-0">
             <h1 className="text-2xl font-bold">intract.</h1>
@@ -12,7 +12,7 @@ const Footer = () => {
               100x rewards
             </p>
           </div>
-          <div className="flex flex-wrap justify-between w-full md:w-auto gap-9">
+          <div className="flex flex-wrap justify-between md:w-auto gap-12">
             <div className="mb-6 md:mb-0">
               <h2 className="text-md font-bold">INTRACT</h2>
               <ul className="mt-2 space-y-2 text-sm">
